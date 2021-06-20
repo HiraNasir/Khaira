@@ -17,17 +17,17 @@ class Testimonial extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          nav1: null,
-          nav2: null
+            nav1: null,
+            nav2: null
         };
-      }
-    
-      componentDidMount() {
+    }
+
+    componentDidMount() {
         this.setState({
-          nav1: this.slider1,
-          nav2: this.slider2
+            nav1: this.slider1,
+            nav2: this.slider2
         });
-      }
+    }
 
     render() {
 
@@ -38,12 +38,12 @@ class Testimonial extends Component {
                         <div className="col col-xs-12">
                             <div className="testimonials-slider">
                                 <div className="testimonial-thumb-active">
-                                    <Slider 
-                                    asNavFor={this.state.nav2}
-                                    fade={true}
-                                    prevArrow= {<button type="button" className="slick-prev"><i className="fa fa-angle-double-left"></i></button>}
-                                    nextArrow= {<button type="button" className="slick-next"><i className="fa fa-angle-double-right"></i></button>}
-                                    ref={slider => (this.slider1 = slider)}
+                                    <Slider
+                                        asNavFor={this.state.nav2}
+                                        fade={true}
+                                        prevArrow={<button type="button" className="slick-prev"><i className="fa fa-angle-double-left"></i></button>}
+                                        nextArrow={<button type="button" className="slick-next"><i className="fa fa-angle-double-right"></i></button>}
+                                        ref={slider => (this.slider1 = slider)}
                                     >
                                         <div className="test-img">
                                             <img src={test1} alt="" />
@@ -55,12 +55,11 @@ class Testimonial extends Component {
                                 </div>
                                 <div className="testimonial-content-active text-center">
                                     <Slider asNavFor={this.state.nav1}
-                                    ref={slider => (this.slider2 = slider)}
-                                    slidesToShow={1}
-                                    swipeToSlide={true}
-                                    swipeToSlide={true}
-                                    arrows={false}
-                                    fade={true}>
+                                        ref={slider => (this.slider2 = slider)}
+                                        slidesToShow={1}
+                                        swipeToSlide={true}
+                                        arrows={false}
+                                        fade={true}>
                                         <div className="grid">
                                             <ul>
                                                 <li><i className="fa fa-star"></i></li>
@@ -70,8 +69,8 @@ class Testimonial extends Component {
                                                 <li><span><i className="fa fa-star"></i></span></li>
                                             </ul>
                                             <p>“ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-                                            form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-                                            passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                                                form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
+                                                passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
                                                 in the middle of text all the loss.</p>
                                             <div className="info">
                                                 <h5>Tawana Blackman</h5>
