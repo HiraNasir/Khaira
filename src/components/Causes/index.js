@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import causesimg from '../../images/cause/img-1.png'
 import causesimg2 from '../../images/cause/img-2.jpg'
 import causesimg3 from '../../images/cause/img-3.jpg'
@@ -9,10 +9,10 @@ import causesimg6 from '../../images/cause/img-6.jpg'
 import './style.css'
 
 const Causes = (props) => {
-    const ClickHandler = () =>{
+    const ClickHandler = () => {
         window.scrollTo(10, 0);
-     }
-    return(
+    }
+    return (
         <div className="case-area section-padding">
             <div className="container">
                 <div className="col-lg-6 offset-lg-3">
@@ -42,6 +42,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Financial Help for Poor Families</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -62,6 +63,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Education for Poor Children</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -82,6 +84,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Send Child to School for a Year</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -102,6 +105,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Food And Home for Children</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -122,6 +126,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Pure Water For The World</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
@@ -142,6 +147,7 @@ const Causes = (props) => {
                                 </ul>
                                 <h3><Link onClick={ClickHandler} to="/case-single">Recycling For Charity</Link></h3>
                                 <p>It is a long established fact that a reader will be distracted.</p>
+                                <h3 className="mt-0"><Link onClick={ClickHandler} to="/case-single">View More</Link></h3>
                             </div>
                         </div>
                     </div>
